@@ -15,7 +15,7 @@ module OmniAuth
       option :name, 'identica'
       option :client_options, {:authorize_path => "/api/oauth/authorize",
                                :request_token_path => "/api/oauth/request_token",
-                               :site => 'http://identi.ca'}
+                               :site => 'https://identi.ca'}
 
       def auth_hash
         OmniAuth::Utils.deep_merge(super, {

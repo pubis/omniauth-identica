@@ -11,7 +11,7 @@ describe OmniAuth::Strategies::Identica do
     end
 
     it 'should have correct site' do
-      subject.options.client_options.site.should eq('http://identi.ca')
+      subject.options.client_options.site.should eq('https://identi.ca')
     end
 
     it 'should have correct authorize url' do
