@@ -11,11 +11,11 @@ describe OmniAuth::Strategies::Identica do
     end
 
     it 'should have correct site' do
-      subject.options.client_options.site.should eq('http://identi.ca/api')
+      subject.options.client_options.site.should eq('http://identi.ca')
     end
 
     it 'should have correct authorize url' do
-      subject.options.client_options.authorize_path.should eq('/oauth/authenticate')
+      subject.options.client_options.authorize_path.should eq('/api/oauth/authorize')
     end
   end
 end
